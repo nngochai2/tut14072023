@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RMITech Shop</title>
+        <link rel="icon" href="rmit-favicon.png">
+        <style>
+            body {
+                background-color: white;
+                margin: 0;
+            }
+
+            h1 {
+                font-family: 'Cambria';
+                margin: 3%;
+                color: rgb(29, 29, 76);
+                padding-bottom: 0;
+            }
+
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            p {
+                font-size: 25px;
+                padding-top: 0;
+                margin-left: 3%;
+            }
+
+            .topnav {
+                overflow: hidden;
+                background-color: rgb(29, 29, 76);
+                width: 100%;
+            }
+
+            /*Formatting the texts in the topnav*/
+            .topnav a {
+                font-family: 'Calibri';
+                float: left;
+                color: white;
+                text-align: center;
+                padding: 18px 16px;
+                text-decoration: none;
+                font-size: 20px;
+            }
+
+
+            .topnav a:hover {
+                background-color:rgb(146, 142, 142);
+                color: #000;
+            }
+
+            .topnav a.active {
+                background-color:rgb(255, 58, 58);
+            }
+
+            /*Desiging the footer.*/
+            .footer{
+                width: 100vw;
+                display: block;
+                overflow: hidden;
+                padding: 70px 0;
+                box-sizing: border-box;
+                background-color: rgb(29, 29, 76);
+            }
+
+            .inner_footer{
+                display: block;
+                margin: 0 auto;
+                width: 1100px;
+                height: 100%;
+            }
+
+            .inner_footer.logo{
+                width: 35%;
+                float: left;
+                height: 100%;
+                display: block;
+            }
+
+            .inner_footer.logo img{
+                width: 60px;
+                height: auto;
+            }
+
+            .inner_footer .footer_third{
+                width: calc(21.666666667% - 20px);
+                margin-right: 10px;
+                float: left;
+                height: 100%;
+            }
+
+            .inner_footer .footer_third:last-child{
+                margin-right: 0;
+            }
+
+            .inner_footer .footer_third h4{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 22px;
+                color: white;
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+                text-decoration: none;
+            }
+
+            .inner_footer .footer_third a{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                color: white;
+                display: block;
+                font-weight: 200;
+                width: 100%;
+                margin-bottom: 5px;
+                text-decoration: none;
+            }
+
+            .inner_footer .footer_third a:hover {
+                color: rgb(255, 58, 58);
+                transition: 0.3s ease-out;
+            }
+
+
+            .inner_footer .footer_third li{
+                display: block;
+                padding: 0 5px;
+                font-size: 20px;
+            }
+
+            .inner_footer .footer_third span{
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: 200;
+                display: block;
+                width: 100%;
+                padding-top: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <img src="rmit-store-logo.png" alt="RMIT Logo" class="center" style="width: 30%; padding-bottom: 2%;">
+        </div>
+
+        <header>
+            <!--Navigation Pane-->
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="laptops.html">Laptops</a>
+                <a href="keyboards.html">Keyboards</a>
+                <a href="speakers.html">Speakers</a>
+                <a class="active" href="feedbacks.html">Feedback</a>
+            </div>
+        </header>
+
+        <div>
+            <h1 style="text-align: center;">
+                <i>You can also inform us any problem with your purchased items via this form <br>so that we can help you as soon as possible.</i>
+            </h1>
+        </div>
+        
+        <div class="center" style="width: 500px; font-size: 25px; padding-top: 20px; padding-bottom: 20px;">
+            <form action="form-processing" method="post" id="item-list">
+                <fieldset>
+                    <legend style="font-size: 25px;"><b>Enter your personal information</b></legend>
+                    <label for="firstname">First Name:</label>
+                        <input type="text" id="lastName" name="lastName" style="font-size: 18px;" required>
+                        <br>
+                        <br>
+                    
+                    <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" style="font-size: 18px;" required>
+                        <br>
+                        <br>
+                    
+                    <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" style="font-size: 18px;" required>
+                        <br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend style="font-size: 25px;"><b>Enter the item's information</b></legend>
+                  
+                    <label for="itemID">Item's ID:</label>
+                        <input type="number" id="itemID" name="itemID" style="font-size: 18px;" required>
+                        <br>
+                        <br>
+
+                    <label for="orderDate">Order Date:</label>
+                        <input type="date" id="orderDate" name="orderDate" style="font-size: 18px;" required >
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend style="font-size: 25px;"><b>Enter your review</b></legend>
+
+                    <label for="rating">Your rating on the scale of 1 to 5:</label>
+                    <br>
+                    <br>
+
+                    <div style="text-align: center; padding: 0 12px;">
+                        <input type="radio" name="rating" value="1">
+                            <label for="rating1">1</label>
+                        <input type="radio" name="rating" value="2">
+                            <label for="rating2">2</label>
+                        <input type="radio" name="rating" value="3">
+                            <label for="rating3">3</label>
+                        <input type="radio" name="rating" value="4">
+                            <label for="rating4">4</label>
+                        <input type="radio" name="rating" value="5">
+                            <label for="rating5">5</label>
+                    </div>
+
+                    <br>
+
+                    <label for="review">Your review:</label>
+                    <br>
+                        <input class="center" type="text" id="review" name="review" style="width: 400px; height: 50px; font-size: 18px;">
+                </fieldset>
+                <br>
+
+                <div style="text-align: center;">
+                    <input type="reset" value="Reset" style="font-size: 20px;">
+                    <input type="submit" value="Submit" style="font-size: 20px;">
+                </div>
+                
+            </form>
+        </div>
+    
+    </body>
+    <footer>
+        <div class="footer">
+            <div class="inner_footer">
+
+                <div class="footer_third">
+                    <h4>Need help?</h4>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a> 
+                </div>
+
+                <div class="footer_third">
+                    <h4>More</h4>
+                    <a href="#">Future Plan</a>
+                </div>
+
+                <div class="footer_third">
+                    <h4>Contact Us</h4>
+                    <a href="https://www.facebook.com/hai.nguyenngoc.5201254" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/_hai.html_/" target="_blank">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Hotline: +84 37 412 9360</a>
+                
+                    <span>
+                        Tel: +84 374129360
+                        Handi Resco Building<br>
+                        521 Kim Ma Street<br>
+                        Ngoc Khanh<br>
+                        Ba Dinh<br>
+                        Hanoi
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>

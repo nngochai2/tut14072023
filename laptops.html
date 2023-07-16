@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RMITech Shop</title>
+        <link rel="icon" href="rmit-favicon.png">
+        <style>
+            body {
+                background-color: white;
+                margin: 0;
+            }
+
+            h1 {
+                font-family: 'Cambria';
+                margin: 3%;
+                color: rgb(29, 29, 76);
+                padding-bottom: 0;
+            }
+
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .topnav {
+                overflow: hidden;
+                background-color: rgb(29, 29, 76);
+                width: 100%;
+            }
+
+            /*Formatting the texts in the topnav*/
+            .topnav a {
+                font-family: 'Calibri';
+                float: left;
+                color: white;
+                text-align: center;
+                padding: 18px 16px;
+                text-decoration: none;
+                font-size: 20px;
+            }
+
+
+            .topnav a:hover {
+                background-color:rgb(146, 142, 142);
+                color: #000;
+            }
+
+            .topnav a.active {
+                background-color:rgb(255, 58, 58);
+            }
+
+            /*Desiging the footer.*/
+            .footer{
+                width: 100vw;
+                display: block;
+                overflow: hidden;
+                padding: 70px 0;
+                box-sizing: border-box;
+                background-color: rgb(29, 29, 76);
+            }
+
+            .inner_footer{
+                display: block;
+                margin: 0 auto;
+                width: 1100px;
+                height: 100%;
+            }
+
+            .inner_footer.logo{
+                width: 35%;
+                float: left;
+                height: 100%;
+                display: block;
+            }
+
+            .inner_footer.logo img{
+                width: 60px;
+                height: auto;
+            }
+
+            .inner_footer .footer_third{
+                width: calc(21.666666667% - 20px);
+                margin-right: 10px;
+                float: left;
+                height: 100%;
+            }
+
+            .inner_footer .footer_third:last-child{
+                margin-right: 0;
+            }
+
+            .inner_footer .footer_third h4{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 22px;
+                color: white;
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+                text-decoration: none;
+            }
+
+            .inner_footer .footer_third a{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                color: white;
+                display: block;
+                font-weight: 200;
+                width: 100%;
+                margin-bottom: 5px;
+                text-decoration: none;
+            }
+
+            .inner_footer .footer_third a:hover {
+                color: rgb(255, 58, 58);
+                transition: 0.3s ease-out;
+            }
+
+
+            .inner_footer .footer_third li{
+                display: block;
+                padding: 0 5px;
+                font-size: 20px;
+            }
+
+            .inner_footer .footer_third span{
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: 200;
+                display: block;
+                width: 100%;
+                padding-top: 20px;
+            }
+
+            a {
+                color: rgb(235, 51, 0);
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <img src="rmit-store-logo.png" alt="RMIT Logo" class="center" style="width: 30%; padding-bottom: 2%;">
+        </div>
+
+        <header>
+            <!--Navigation Pane-->
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a class="active" href="laptops.html">Laptops</a>
+                <a href="keyboards.html">Keyboards</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="feedbacks.html">Feedback</a>
+            </div>
+        </header>
+
+        <div>
+            <h1 style="text-align: center; font-size: 50px;">💻Our products💻</h1>
+        </div>
+
+        <div>
+            <table id="item-list" style="margin-left: auto; margin-right: auto; font-size: 23px; padding-bottom: 20px;">
+                <tbody><tr>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2023/3/9/in5630nt-cnb-00000ff090-sl.jpg" alt="Dell Inspiron 16 5630">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/laptop/dell-inspiron-16-5630-6485" target="_blank"><h3>Dell Inspiron 16 5630</h3></a>
+                                <p><strong>19.790.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2023/3/22/dell-inspiron-5330-thinkpro-1.png" alt="Dell Inspiron 13 5330">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/laptop/dell-inspiron-13-5330-6308" target="_blank"><h3>Dell Inspiron 13 5330</h3></a>
+                                <p><strong>20.790.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2022/12/23/lenovo-thinkpad-x1-carbon-gen-11-thinkpro-01.png" alt="Lenovo ThinkPad X1 Carbon Gen 11">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/laptop/lenovo-thinkpad-x1-carbon-gen-11-6950" target="_blank"><h3>Lenovo ThinkPad X1 Carbon Gen 11</h3></a>
+                                <p><strong>53.990.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2023/4/18/lenovo-thinkbook-16-g5-01-thinkpro-Woa.png" alt="Lenovo ThinkBook 16 G5+">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/laptop/lenovo-thinkbook-16-g5-6852" target="_blank"><h3>Lenovo ThinkBook 16 G5+</h3></a>
+                                <p><strong>25.990.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2023/3/24/microsoft-surface-pro-9-thinkpro-1.png" alt="Microsoft Surface Pro 9 (Only Device)">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/laptop/microsoft-surface-pro-9-5299" target="_blank"><h3>Microsoft Surface Pro 9 (Only Device)</h3></a>
+                                <p><strong>23.990.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2023/5/8/dell-xps-13-plus-9320-thinkpro-UvD.jpg" alt="Dell XPS 13 Plus 9320">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/laptop/dell-xps-13-plus-9320-6329" target="_blank"><h3>Dell XPS 13 Plus 9320</h3></a>
+                                <p><strong>29.990.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2023/5/26/lg-gram-17-2022-nhap-khau-thinkpro-DRU.jpg" alt="LG Gram 17 2022">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/laptop/lg-gram-17-2022-nhap-khau-6318" target="_blank"><h3>LG Gram 17 2022</h3></a>
+                                <p><strong>19.990.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2022/6/13/xps139315%201.png" alt="Dell XPS 13 9315 (2022)">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/laptop/dell-xps-13-9315-2022-5235" target="_blank"><h3>Dell XPS 13 9315 (2022)</h3></a>
+                                <p><strong>21.990.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2022/7/25/42111_laptop_dell_inspiron_16_5625___3_.jpeg" alt="Dell Inspiron 16 5625">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/laptop/dell-inspiron-16-5625-5232" target="_blank"><h3>Dell Inspiron 16 5625</h3></a>
+                                <p><strong>13.490.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </body>
+    <footer>
+        <div class="footer">
+            <div class="inner_footer">
+
+                <div class="footer_third">
+                    <h4>Need help?</h4>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a> 
+                </div>
+
+                <div class="footer_third">
+                    <h4>More</h4>
+                    <a href="#">Future Plan</a>
+                </div>
+
+                <div class="footer_third">
+                    <h4>Contact Us</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Hotline: +84 37 412 9360</a>
+                
+                    <span>
+                        Tel: +84 374129360
+                        Handi Resco Building<br>
+                        521 Kim Ma Street<br>
+                        Ngoc Khanh<br>
+                        Ba Dinh<br>
+                        Hanoi
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>

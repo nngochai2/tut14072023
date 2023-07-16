@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RMITech Shop</title>
+        <link rel="icon" href="rmit-favicon.png">
+        <style>
+            body {
+                background-color: white;
+                margin: 0;
+            }
+            
+            h1 {
+                font-family: 'Cambria';
+                margin: 3%;
+                color: rgb(29, 29, 76);
+                padding-bottom: 0;
+            }
+
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .topnav {
+                overflow: hidden;
+                background-color: rgb(29, 29, 76);
+                width: 100%;
+            }
+
+            /*Formatting the texts in the topnav*/
+            .topnav a {
+                font-family: 'Calibri';
+                float: left;
+                color: white;
+                text-align: center;
+                padding: 18px 16px;
+                text-decoration: none;
+                font-size: 20px;
+            }
+
+
+            .topnav a:hover {
+                background-color:rgb(146, 142, 142);
+                color: #000;
+            }
+
+            .topnav a.active {
+                background-color:rgb(255, 58, 58);
+            }
+
+            /*Desiging the footer.*/
+            .footer{
+                width: 100vw;
+                display: block;
+                overflow: hidden;
+                padding: 70px 0;
+                box-sizing: border-box;
+                background-color: rgb(29, 29, 76);
+            }
+
+            .inner_footer{
+                display: block;
+                margin: 0 auto;
+                width: 1100px;
+                height: 100%;
+            }
+
+            .inner_footer.logo{
+                width: 35%;
+                float: left;
+                height: 100%;
+                display: block;
+            }
+
+            .inner_footer.logo img{
+                width: 60px;
+                height: auto;
+            }
+
+            .inner_footer .footer_third{
+                width: calc(21.666666667% - 20px);
+                margin-right: 10px;
+                float: left;
+                height: 100%;
+            }
+
+            .inner_footer .footer_third:last-child{
+                margin-right: 0;
+            }
+
+            .inner_footer .footer_third h4{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 22px;
+                color: white;
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+                text-decoration: none;
+            }
+
+            .inner_footer .footer_third a{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                color: white;
+                display: block;
+                font-weight: 200;
+                width: 100%;
+                margin-bottom: 5px;
+                text-decoration: none;
+            }
+
+            .inner_footer .footer_third a:hover {
+                color: rgb(255, 58, 58);
+                transition: 0.3s ease-out;
+            }
+
+
+            .inner_footer .footer_third li{
+                display: block;
+                padding: 0 5px;
+                font-size: 20px;
+            }
+
+            .inner_footer .footer_third span{
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: 200;
+                display: block;
+                width: 100%;
+                padding-top: 20px;
+            }
+
+            a {
+                color: rgb(235, 51, 0);
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <img src="rmit-store-logo.png" alt="RMIT Logo" class="center" style="width: 30%; padding-bottom: 2%;">
+        </div>
+
+        <header>
+            <!--Navigation Pane-->
+            <div class="topnav">
+                <a  href="index.html">Home</a>
+                <a href="laptops.html">Laptops</a>
+                <a class="active" href="keyboards.html">Keyboards</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="feedbacks.html">Feedback</a>
+            </div>
+        </header>
+
+        <div>
+            <h1 style="text-align: center; font-size: 50px;">⌨️Our products⌨️</h1>
+        </div>
+
+        <div>
+            <table id="item-list" style="margin-left: auto; margin-right: auto; font-size: 23px; padding-bottom: 20px;">
+                <tbody><tr>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2023/6/6/ban-phim-co-fl-esport-cmk75-thinkpro-nicespace.png" alt="FL ESPORT CMK75">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/ban-phim/ban-phim-co-fl-esport-cmk75-6865" target="_blank"><h3>FL ESPORT CMK75</h3></a>
+                                <p><strong>2.290.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2023/4/3/KE12E0~1.JPG" alt="Keychron K3 v2">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/ban-phim/ban-phim-keychron-k3-v2-2389" target="_blank"><h3>Keychron K3 v2</h3></a>
+                                <p><strong>1.690.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2022/7/7/Keychron-K8-Pro-01.png" alt="Keychron K8 Pro QMK/VIA">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/ban-phim/ban-phim-co-keychron-k8-pro-qmkvia-6314" target="_blank"><h3>Keychron K8 Pro QMK/VIA</h3></a>
+                                <p><strong>1.690.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2022/2/24/F96-01.png" alt="IQUNIX F96 Coral Sea (Cherry MX Red)">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/ban-phim/ban-phim-co-iqunix-f96-coral-sea-3739" target="_blank"><h3>IQUNIX F96 Coral Sea (Cherry MX Red)</h3></a>
+                                <p><strong>4.590.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2022/7/19/GM780_06.jpg" alt="Newmen GM780 - Nebula Gasket">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/ban-phim/ban-phim-co-newmen-gm780-nebula-gasket-4391" target="_blank"><h3>Newmen GM780 - Nebula Gasket</h3></a>
+                                <p><strong>1.690.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="https://images.thinkgroup.vn/unsafe/460x460/https://media-api-beta.thinkpro.vn/media/core/products/2022/4/22/Q75_01.jpg" alt="FL Esport Q75 Azure Green">
+                        </div>
+                        <div>
+                            <center>
+                                <a href="https://thinkpro.vn/ban-phim/ban-phim-co-fl-esport-q75-azure-green-3-mode-4050" target="_blank"><h3>FL Esport Q75 Azure Green</h3></a>
+                                <p><strong>2.690.000 VND</strong></p>
+                            </center>
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </body>
+    <footer>
+        <div class="footer">
+            <div class="inner_footer">
+
+                <div class="footer_third">
+                    <h4>Need help?</h4>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a> 
+                </div>
+
+                <div class="footer_third">
+                    <h4>More</h4>
+                    <a href="#">Future Plan</a>
+                </div>
+
+                <div class="footer_third">
+                    <h4>Contact Us</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Hotline: +84 37 412 9360</a>
+                
+                    <span>
+                        Tel: +84 374129360
+                        Handi Resco Building<br>
+                        521 Kim Ma Street<br>
+                        Ngoc Khanh<br>
+                        Ba Dinh<br>
+                        Hanoi
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>
